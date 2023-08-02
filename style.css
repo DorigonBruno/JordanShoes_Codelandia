@@ -286,8 +286,8 @@ footer {
   }
 
   .conteudo p {
-    font-size: 1rem;
-    line-height: 24px;
+    font-size: .875rem;
+    line-height: 22px;
   }
 
   .main-conteudo {
@@ -308,6 +308,7 @@ footer {
 
   .container-list {
     margin-bottom: 30px;
+    gap: 14px;
   }
 
   .container-list li {
