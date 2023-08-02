@@ -168,6 +168,7 @@ body {
 
 .lightbox-content img {
   width: 600px;
+  object-fit: cover;
 }
 
 .lightbox a {
