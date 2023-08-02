@@ -152,7 +152,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  animation: show-down .6s forwards;
+  animation: show-down 0.6s forwards;
 }
 
 @keyframes show-down {
@@ -199,4 +199,139 @@ footer {
   font-weight: 500;
   color: var(--title);
   font-size: 1.125rem;
+}
+
+@media (max-width: 750px) {
+  .jordanTitle {
+    font-size: 1.5rem;
+  }
+
+  .conteudo {
+    padding-left: 50px;
+    max-width: 500px;
+  }
+
+  .conteudo h1 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+
+  .conteudo p {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
+
+  .main-conteudo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .main-conteudo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+  }
+
+  .main-conteudo span {
+    line-height: 25px;
+    font-size: 1.125rem;
+    padding: 10px;
+  }
+
+  .container-list {
+    margin-bottom: 50px;
+  }
+
+  .container-list li {
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .container-list li:hover {
+    transform: scale(1.1);
+  }
+
+  .lightbox-content img {
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .lightbox a {
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    padding: 5px;
+  }
+
+  footer {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .jordanTitle {
+    font-size: 1rem;
+  }
+
+  .conteudo {
+    padding-left: 30px;
+    max-width: 300px;
+  }
+
+  .conteudo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    line-height: 30px;
+  }
+
+  .conteudo p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .main-conteudo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-conteudo h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .main-conteudo span {
+    font-size: .875rem;
+    padding: 10px;
+    line-height: 18px;
+  }
+
+  .container-list {
+    margin-bottom: 30px;
+  }
+
+  .container-list li {
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .container-list li:hover {
+    transform: scale(1.1);
+  }
+
+  .lightbox-content img {
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .lightbox a {
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  footer {
+    font-size: 1.125rem;
+  }
 }
