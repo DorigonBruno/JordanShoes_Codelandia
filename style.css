@@ -1,4 +1,3 @@
-
 :root {
   --bgSite: #f6f6f6;
   --bgCard: #ebe9ea;
@@ -30,7 +29,7 @@ ul {
 
 body {
   background: var(--bgSite);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .notification {
@@ -41,7 +40,6 @@ body {
   margin-bottom: 15px;
   font-weight: 500;
   color: var(--title);
-
 }
 
 .notification span {
@@ -72,7 +70,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 100px;
-  max-width: 800px;
+  max-width: 737px;
 }
 
 .conteudo h1 {
@@ -83,14 +81,14 @@ body {
   font-weight: 600;
 }
 
-.conteudo p{
+.conteudo p {
   font-size: 1.5rem;
   line-height: 39px;
-  color: var(--white );
+  color: var(--white);
   font-weight: 500;
 }
 
-.main-conteudo{
+.main-conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,26 +96,27 @@ body {
   margin-bottom: 65px;
 }
 
-.main-conteudo h2{
+.main-conteudo h2 {
   font-size: 2rem;
   margin-bottom: 18px;
   font-weight: 600;
   color: var(--title);
 }
 
-.main-conteudo span{
+.main-conteudo span {
   font-weight: 500;
   line-height: 25px;
   font-size: 1.25rem;
   color: var(--text);
 }
- 
+
 .container-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 100px;
 }
 
 .container-list li {
@@ -128,16 +127,68 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: .3s ease-in-out;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
-.container-list li:hover{
+.container-list li:hover {
   transform: scale(1.1);
 }
 
-footer{
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  animation: show-down .6s forwards;
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightbox-content img {
+  width: 600px;
+}
+
+.lightbox a {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background: var(--title);
+  color: var(--white);
+  font-size: 2rem;
+  border: 1px solid var(--white);
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox a:hover {
+  color: var(--title);
+  background: var(--white);
+}
+
+footer {
   height: 60px;
   width: 100%;
   background: var(--bgNotification);
